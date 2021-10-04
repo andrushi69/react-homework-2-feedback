@@ -1,8 +1,8 @@
 {
-  "name": "react-homework-2",
+  "name": "react-homework-2-feedback",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://AndrewGalkin.githoub.io/react-homework-2",
+  "homepage": "https://AndrewGalkin.githoub.io/react-homework-2-feedback",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
