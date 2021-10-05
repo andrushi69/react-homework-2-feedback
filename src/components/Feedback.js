@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./Feedback.module.scss"
 import Statistics from "./Statistics";
+import SelectButtons from "./SelectButtons";
 
 class Feedback extends React.Component {
 
@@ -42,22 +43,10 @@ class Feedback extends React.Component {
     const {feedbacks} = this.state;
     return (
       <div className={classes.all_content}>
-        <div>
-          <button onClick={() => {
-            this.goodIncrement()
-            this.countTotalFeedback()
-          }}>Good
-          </button>
-          <button onClick={() => {
-            this.neutralIncrement()
-            this.countTotalFeedback()
-          }}>Neutral
-          </button>
-          <button onClick={() => {
-            this.badIncrement()
-            this.countTotalFeedback()
-          }}>Bad
-          </button>
+        <h1>Please leave your feedback</h1>
+        <div className={classes.buttons_content}>
+          <SelectButtons goodIncrement={this.goodIncrement} neutralIncrement={this.neutralIncrement}
+                         badIncrement={this.badIncrement} countTotalFeedback={this.countTotalFeedback}/>
         </div>
         {total === 0 ? "NO MESSAGE" :
           (<Statistics good={good} neutral={neutral} bad={bad} total={total} feedbacks={feedbacks}/>)}
