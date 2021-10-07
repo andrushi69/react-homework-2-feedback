@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./Feedback.module.scss"
-import Statistics from "./Statistics";
-import SelectButtons from "./SelectButtons";
+import Statistics from "../Statistic/Statistics";
+import SelectButtons from "../SelectBtn/SelectButtons";
 
 class Feedback extends React.Component {
 

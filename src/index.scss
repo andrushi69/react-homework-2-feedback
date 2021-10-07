@@ -5,6 +5,7 @@ body {
   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
 }
 img {
   display: block;
@@ -27,5 +28,7 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
-.main_content{
+button{
+  cursor: pointer;
 }
+
